@@ -20,23 +20,33 @@
 
 <body>
 
-    <div class="container text-center mt-4 w-75">
+    <div class="container-fluid text-center mt-4">
+        <!-- add button -->
         <div class="row">
-            <div class="col-md-12">
-                
+            <div class="col-md-12 text-center">
+                <h3>GifTastic</h3>
+                <form class="form-inline text-center">
+                    <label id="label" for="user-input" class="mr-2 mb-3">Enter a Button</label>
+                    <input id ="addInput" class="form-control mr-sm-2" type="text" placeholder="Add" aria-label="add">
+                    <button id="addButton" class="btn btn-primary" type="submit">Add</button>
+                </form>
             </div>
         </div>
+        <!-- dynamic button -->
         <div class="row">
             <div class="col-md-12">
-               
+                <div id="renderBtn">
+                </div>
             </div>
         </div>
+        <!-- dynamic gif -->
         <div class="row">
-            <div class="col-md-12">
-                         
+            <div class="col-md-12" id="renderGif">
+
             </div>
         </div>
     </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
